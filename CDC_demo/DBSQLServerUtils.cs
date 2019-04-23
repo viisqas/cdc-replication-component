@@ -17,9 +17,7 @@ namespace CDC_demo
             try
             {
                 Console.WriteLine("Openning Connection ...");
-
                 conn.Open();
-
                 Console.WriteLine("Connection successful!");
             }
             catch (Exception e)
