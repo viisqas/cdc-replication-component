@@ -5,39 +5,49 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data.Common;
+using System.IO;
+using System.Runtime.Serialization.Json;
+using System.Runtime.Serialization;
+using System.Data;
+using System.Xml;
 
 namespace CDC_demo
 {
-    [Serializable]
     class Program
     {
         static void Main(string[] args)
         {
             //DB connect
             SqlConnection conn = DBSQLServerUtils.GetDBConnection();
-
             //Get data
             string sqlExpression = "Select * from cdc.dbo_PersonalInfo_CT";
+            XmlDocument doc = new XmlDocument();
+            string filename = "XmlTest.xml";
+            SqlDataAdapter adapter = new SqlDataAdapter(sqlExpression, conn);
 
-            SqlCommand command = new SqlCommand(sqlExpression, conn);
-            SqlDataReader reader = command.ExecuteReader();
-      
-            if (reader.HasRows)
+            DataSet ds = new DataSet("PersonalInfo");
+            adapter.Fill(ds);
+
+            DataTable dt = ds.Tables[0];
+            
+            conn.Close();
+
+            foreach (DataColumn column in dt.Columns)
+                Console.Write("\t{0}", column.ColumnName);
+            Console.WriteLine();
+
+            foreach(DataRow row in dt.Rows)
             {
-                Console.WriteLine("{0}\t{1}\t{2}\t{3}", reader.GetName(0), reader.GetName(3), reader.GetName(5), reader.GetName(6));
-
-                while (reader.Read())
-                {
-                    byte[] start_lsn = (byte[])reader.GetValue(0);
-                    int operation = reader.GetInt32(3);
-                    int ClientId = reader.GetInt32(5);
-                    string FirstName = reader.GetString(6);
+                var cells = row.ItemArray;
+                foreach (object cell in cells)
+                    Console.Write("\t{0}", cell);
                     
-                    Console.WriteLine("{0}\t{1}\t{2}\t{3}", start_lsn, operation, ClientId, FirstName);
-                }
+                Console.WriteLine();
             }
 
-            reader.Close();
+            ds.WriteXml(filename);
+           
+
             Console.Read();
         }
     }
