@@ -17,38 +17,28 @@ namespace CDC_demo
     {
         static void Main(string[] args)
         {
-            //DB connect
-            SqlConnection conn = DBSQLServerUtils.GetDBConnection();
-            //Get data
-            string sqlExpression = "Select * from cdc.dbo_PersonalInfo_CT";
-            XmlDocument doc = new XmlDocument();
-            string filename = "XmlTest.xml";
-            SqlDataAdapter adapter = new SqlDataAdapter(sqlExpression, conn);
-
-            DataSet ds = new DataSet("PersonalInfo");
-            adapter.Fill(ds);
-
-            DataTable dt = ds.Tables[0];
-            
-            conn.Close();
-
-            foreach (DataColumn column in dt.Columns)
-                Console.Write("\t{0}", column.ColumnName);
-            Console.WriteLine();
-
-            foreach(DataRow row in dt.Rows)
-            {
-                var cells = row.ItemArray;
-                foreach (object cell in cells)
-                    Console.Write("\t{0}", cell);
-                    
-                Console.WriteLine();
-            }
-
-            ds.WriteXml(filename);
-           
+            SerializeTable("captured_columns");
+            SerializeTable("change_tables");
 
             Console.Read();
+        }
+
+        public static void SerializeTable(string table)
+        {
+            SqlConnection conn = DBSQLServerUtils.GetDBConnection();
+            
+            string sqlExpression = $"Select * from cdc.{table}";
+            XmlDocument doc = new XmlDocument();
+            string filedate = DateTime.Now.ToString("MM-dd-yyyy HH.mm.ss");
+            string filename = $"{table}.{filedate}.xml";
+            SqlDataAdapter adapter = new SqlDataAdapter(sqlExpression, conn);
+
+            DataSet ds = new DataSet($"{table}");
+            adapter.Fill(ds);
+            DataTable dt = ds.Tables[0];
+            ds.WriteXml(filename);
+            Console.WriteLine("table is serialized");
+            conn.Close();
         }
     }
 }

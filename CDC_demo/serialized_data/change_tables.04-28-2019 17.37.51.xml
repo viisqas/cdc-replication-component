@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="yes"?>
+<change_tables>
+  <Table>
+    <object_id>1861581670</object_id>
+    <version>0</version>
+    <source_object_id>1445580188</source_object_id>
+    <capture_instance>dbo_BankAccount</capture_instance>
+    <start_lsn>AAAAJgAABtgAVg==</start_lsn>
+    <supports_net_changes>true</supports_net_changes>
+    <role_name>visqas</role_name>
+    <index_name>PK__BankAcco__BE2ACD6E2B75DE40</index_name>
+    <create_date>2019-04-28T16:46:04.123+03:00</create_date>
+    <partition_switch>true</partition_switch>
+  </Table>
+  <Table>
+    <object_id>1957582012</object_id>
+    <version>0</version>
+    <source_object_id>1381579960</source_object_id>
+    <capture_instance>dbo_PersonalInfo</capture_instance>
+    <start_lsn>AAAAJwAAABAAFg==</start_lsn>
+    <supports_net_changes>true</supports_net_changes>
+    <role_name>visqas</role_name>
+    <index_name>PK__Personal__E67E1A243EE68B9C</index_name>
+    <create_date>2019-04-28T16:46:53.383+03:00</create_date>
+    <partition_switch>true</partition_switch>
+  </Table>
+</change_tables>
