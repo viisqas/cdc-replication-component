@@ -2,7 +2,7 @@
   "profiles": {
     "CDC_demo": {
       "commandName": "Project",
-      "workingDirectory": "C:\\Users\\visqas\\source\\repos\\CDC_demo\\CDC_demo\\serialized_data"
+      "workingDirectory": "C:\\Users\\visqas\\source\\repos\\serialized_data"
     }
   }
 }

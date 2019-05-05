@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data.SqlClient;
 
 namespace CDC_demo
@@ -16,7 +12,7 @@ namespace CDC_demo
             
             try
             {
-                Console.WriteLine("Openning Connection ...");
+                Console.WriteLine("Openning Connection...");
                 conn.Open();
                 Console.WriteLine("Connection successful!");
             }
