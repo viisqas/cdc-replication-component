@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dbo_test_table_CT>
+  <row start_lsn="System.Byte[]">
+    <end_lsn></end_lsn>
+    <seqval>System.Byte[]</seqval>
+    <operation>2</operation>
+    <update_mask>System.Byte[]</update_mask>
+    <id>1</id>
+  </row>
+  <row start_lsn="System.Byte[]">
+    <end_lsn></end_lsn>
+    <seqval>System.Byte[]</seqval>
+    <operation>2</operation>
+    <update_mask>System.Byte[]</update_mask>
+    <id>2</id>
+  </row>
+  <row start_lsn="System.Byte[]">
+    <end_lsn></end_lsn>
+    <seqval>System.Byte[]</seqval>
+    <operation>2</operation>
+    <update_mask>System.Byte[]</update_mask>
+    <id>3</id>
+  </row>
+  <row start_lsn="System.Byte[]">
+    <end_lsn></end_lsn>
+    <seqval>System.Byte[]</seqval>
+    <operation>2</operation>
+    <update_mask>System.Byte[]</update_mask>
+    <id>4</id>
+  </row>
+  <row start_lsn="System.Byte[]">
+    <end_lsn></end_lsn>
+    <seqval>System.Byte[]</seqval>
+    <operation>2</operation>
+    <update_mask>System.Byte[]</update_mask>
+    <id>5</id>
+  </row>
+  <row start_lsn="System.Byte[]">
+    <end_lsn></end_lsn>
+    <seqval>System.Byte[]</seqval>
+    <operation>2</operation>
+    <update_mask>System.Byte[]</update_mask>
+    <id>6</id>
+  </row>
+  <row start_lsn="System.Byte[]">
+    <end_lsn></end_lsn>
+    <seqval>System.Byte[]</seqval>
+    <operation>2</operation>
+    <update_mask>System.Byte[]</update_mask>
+    <id>7</id>
+  </row>
+  <row start_lsn="System.Byte[]">
+    <end_lsn></end_lsn>
+    <seqval>System.Byte[]</seqval>
+    <operation>2</operation>
+    <update_mask>System.Byte[]</update_mask>
+    <id>8</id>
+  </row>
+  <row start_lsn="System.Byte[]">
+    <end_lsn></end_lsn>
+    <seqval>System.Byte[]</seqval>
+    <operation>2</operation>
+    <update_mask>System.Byte[]</update_mask>
+    <id>9</id>
+  </row>
+  <row start_lsn="System.Byte[]">
+    <end_lsn></end_lsn>
+    <seqval>System.Byte[]</seqval>
+    <operation>2</operation>
+    <update_mask>System.Byte[]</update_mask>
+    <id>10</id>
+  </row>
+  <row start_lsn="System.Byte[]">
+    <end_lsn></end_lsn>
+    <seqval>System.Byte[]</seqval>
+    <operation>2</operation>
+    <update_mask>System.Byte[]</update_mask>
+    <id>11</id>
+  </row>
+  <row start_lsn="System.Byte[]">
+    <end_lsn></end_lsn>
+    <seqval>System.Byte[]</seqval>
+    <operation>2</operation>
+    <update_mask>System.Byte[]</update_mask>
+    <id>12</id>
+  </row>
+  <row start_lsn="System.Byte[]">
+    <end_lsn></end_lsn>
+    <seqval>System.Byte[]</seqval>
+    <operation>2</operation>
+    <update_mask>System.Byte[]</update_mask>
+    <id>13</id>
+  </row>
+  <row start_lsn="System.Byte[]">
+    <end_lsn></end_lsn>
+    <seqval>System.Byte[]</seqval>
+    <operation>2</operation>
+    <update_mask>System.Byte[]</update_mask>
+    <id>14</id>
+  </row>
+  <row start_lsn="System.Byte[]">
+    <end_lsn></end_lsn>
+    <seqval>System.Byte[]</seqval>
+    <operation>2</operation>
+    <update_mask>System.Byte[]</update_mask>
+    <id>15</id>
+  </row>
+  <row start_lsn="System.Byte[]">
+    <end_lsn></end_lsn>
+    <seqval>System.Byte[]</seqval>
+    <operation>2</operation>
+    <update_mask>System.Byte[]</update_mask>
+    <id>16</id>
+  </row>
+  <row start_lsn="System.Byte[]">
+    <end_lsn></end_lsn>
+    <seqval>System.Byte[]</seqval>
+    <operation>2</operation>
+    <update_mask>System.Byte[]</update_mask>
+    <id>17</id>
+  </row>
+  <row start_lsn="System.Byte[]">
+    <end_lsn></end_lsn>
+    <seqval>System.Byte[]</seqval>
+    <operation>2</operation>
+    <update_mask>System.Byte[]</update_mask>
+    <id>18</id>
+  </row>
+  <row start_lsn="System.Byte[]">
+    <end_lsn></end_lsn>
+    <seqval>System.Byte[]</seqval>
+    <operation>2</operation>
+    <update_mask>System.Byte[]</update_mask>
+    <id>19</id>
+  </row>
+  <row start_lsn="System.Byte[]">
+    <end_lsn></end_lsn>
+    <seqval>System.Byte[]</seqval>
+    <operation>2</operation>
+    <update_mask>System.Byte[]</update_mask>
+    <id>20</id>
+  </row>
+  <row start_lsn="System.Byte[]">
+    <end_lsn></end_lsn>
+    <seqval>System.Byte[]</seqval>
+    <operation>2</operation>
+    <update_mask>System.Byte[]</update_mask>
+    <id>21</id>
+  </row>
+  <row start_lsn="System.Byte[]">
+    <end_lsn></end_lsn>
+    <seqval>System.Byte[]</seqval>
+    <operation>2</operation>
+    <update_mask>System.Byte[]</update_mask>
+    <id>22</id>
+  </row>
+  <row start_lsn="System.Byte[]">
+    <end_lsn></end_lsn>
+    <seqval>System.Byte[]</seqval>
+    <operation>2</operation>
+    <update_mask>System.Byte[]</update_mask>
+    <id>23</id>
+  </row>
+</dbo_test_table_CT>

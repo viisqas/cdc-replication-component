@@ -3,11 +3,17 @@ using System.Data.SqlClient;
 
 namespace CDC_demo
 {
-    class DBSQLServerUtils
+    class SqlConnector
     {
         public static SqlConnection GetDBConnection()
         {
-            string connString = "Data Source=VIKTORIYAKA5408;Initial Catalog=CDC_demo;Integrated Security=True";
+            string connString = "Data Source=VIKTORIYAKA5408;Initial Catalog=cdc_test;Integrated Security=True";
+            //SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder(connString);
+            //Console.WriteLine("Original: " + builder.ConnectionString);
+            //string server = builder.DataSource;
+            //string database = builder.InitialCatalog;
+
+            //Console.WriteLine($"server: {server}, database: {database}");
             SqlConnection conn = new SqlConnection(connString);
             
             try

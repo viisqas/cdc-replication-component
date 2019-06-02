@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<captured_columns>
+  <column object_id="1861581670">
+    <column_name>ClientId</column_name>
+    <column_type>1</column_type>
+    <column_ordinal>int</column_ordinal>
+    <is_computed>1</is_computed>
+    <masking_function>False</masking_function>
+  </column>
+  <column object_id="1861581670">
+    <column_name>AccountNumber</column_name>
+    <column_type>2</column_type>
+    <column_ordinal>varchar</column_ordinal>
+    <is_computed>2</is_computed>
+    <masking_function>False</masking_function>
+  </column>
+  <column object_id="1861581670">
+    <column_name>OpeningDate</column_name>
+    <column_type>3</column_type>
+    <column_ordinal>datetime</column_ordinal>
+    <is_computed>3</is_computed>
+    <masking_function>False</masking_function>
+  </column>
+  <column object_id="1861581670">
+    <column_name>ClosingDate</column_name>
+    <column_type>4</column_type>
+    <column_ordinal>datetime</column_ordinal>
+    <is_computed>4</is_computed>
+    <masking_function>False</masking_function>
+  </column>
+  <column object_id="1861581670">
+    <column_name>Balance</column_name>
+    <column_type>5</column_type>
+    <column_ordinal>real</column_ordinal>
+    <is_computed>5</is_computed>
+    <masking_function>False</masking_function>
+  </column>
+  <column object_id="1957582012">
+    <column_name>ClientId</column_name>
+    <column_type>1</column_type>
+    <column_ordinal>int</column_ordinal>
+    <is_computed>1</is_computed>
+    <masking_function>False</masking_function>
+  </column>
+  <column object_id="1957582012">
+    <column_name>FirstName</column_name>
+    <column_type>2</column_type>
+    <column_ordinal>nvarchar</column_ordinal>
+    <is_computed>2</is_computed>
+    <masking_function>False</masking_function>
+  </column>
+  <column object_id="1957582012">
+    <column_name>LastName</column_name>
+    <column_type>3</column_type>
+    <column_ordinal>nvarchar</column_ordinal>
+    <is_computed>3</is_computed>
+    <masking_function>False</masking_function>
+  </column>
+  <column object_id="1957582012">
+    <column_name>BirthDate</column_name>
+    <column_type>4</column_type>
+    <column_ordinal>date</column_ordinal>
+    <is_computed>4</is_computed>
+    <masking_function>False</masking_function>
+  </column>
+  <column object_id="1957582012">
+    <column_name>City</column_name>
+    <column_type>5</column_type>
+    <column_ordinal>nvarchar</column_ordinal>
+    <is_computed>5</is_computed>
+    <masking_function>False</masking_function>
+  </column>
+  <column object_id="1957582012">
+    <column_name>ClientAddress</column_name>
+    <column_type>6</column_type>
+    <column_ordinal>nvarchar</column_ordinal>
+    <is_computed>6</is_computed>
+    <masking_function>False</masking_function>
+  </column>
+  <column object_id="1957582012">
+    <column_name>PhoneNumber</column_name>
+    <column_type>7</column_type>
+    <column_ordinal>nvarchar</column_ordinal>
+    <is_computed>7</is_computed>
+    <masking_function>False</masking_function>
+  </column>
+  <column object_id="1957582012">
+    <column_name>Passport</column_name>
+    <column_type>8</column_type>
+    <column_ordinal>nvarchar</column_ordinal>
+    <is_computed>8</is_computed>
+    <masking_function>False</masking_function>
+  </column>
+  <column object_id="1957582012">
+    <column_name>Job</column_name>
+    <column_type>9</column_type>
+    <column_ordinal>nvarchar</column_ordinal>
+    <is_computed>9</is_computed>
+    <masking_function>False</masking_function>
+  </column>
+  <column object_id="1957582012">
+    <column_name>Position</column_name>
+    <column_type>10</column_type>
+    <column_ordinal>nvarchar</column_ordinal>
+    <is_computed>10</is_computed>
+    <masking_function>False</masking_function>
+  </column>
+</captured_columns>

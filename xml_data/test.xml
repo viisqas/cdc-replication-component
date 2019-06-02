@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<general_el>
+  <sub_el first_attr="first_el1">
+    <first_company>company1</first_company>
+    <first_price>213231</first_price>
+  </sub_el>
+  <sub_el second_attr="second_el1">
+    <second_company>company2</second_company>
+    <second_price>85634</second_price>
+  </sub_el>
+</general_el>
