@@ -7,13 +7,8 @@ namespace CDC_demo
     {
         public static SqlConnection GetDBConnection()
         {
-            string connString = "Data Source=VIKTORIYAKA5408;Initial Catalog=cdc_test;Integrated Security=True";
-            //SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder(connString);
-            //Console.WriteLine("Original: " + builder.ConnectionString);
-            //string server = builder.DataSource;
-            //string database = builder.InitialCatalog;
+            string connString = "Data Source=VIKTORIYAKA5408;Initial Catalog=service_order;Integrated Security=True";
 
-            //Console.WriteLine($"server: {server}, database: {database}");
             SqlConnection conn = new SqlConnection(connString);
             
             try

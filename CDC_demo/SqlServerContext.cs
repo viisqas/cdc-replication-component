@@ -9,8 +9,8 @@ namespace CDC_demo
     {
         public static List<string> GetLocalTableNames(SqlConnection connection)
         {
-            string get_sys_object = "SELECT SCHEMA_NAME(5) as schema_name, name as table_name from sys.tables where name like('dbo%')";
-            SqlCommand cmd = new SqlCommand(get_sys_object, connection);
+            string CDC_LOCAL_TABLE_NAMES = "SELECT SCHEMA_NAME(5) as schema_name, name as table_name from sys.tables where name like('dbo%')";
+            SqlCommand cmd = new SqlCommand(CDC_LOCAL_TABLE_NAMES, connection);
             List<string> dbo_tables = new List<string>();
             string row = null;
 
@@ -23,11 +23,23 @@ namespace CDC_demo
                 }
             }
             return dbo_tables;
+        }
 
-            //foreach (string item in dbo_tables)
-            //{
-            //    Console.WriteLine(item);
-            //}
+        public static List<string> GetColumnNames(SqlConnection connection, string tablename)
+        {
+            string get_column_from_table = $"select * from cdc.{tablename}";
+            List<string> Column_names = new List<string>();
+            SqlCommand cmd = new SqlCommand(get_column_from_table, connection);
+            
+            using (var dr = cmd.ExecuteReader())
+            {
+                for (int i = 5; i < dr.FieldCount-1; i++)
+                {
+                    var temp = $"{dr.GetName(i).ToString()}";
+                    Column_names.Add(temp);
+                }
+            }
+            return Column_names;
         }
     }
 }

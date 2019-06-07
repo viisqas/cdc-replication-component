@@ -17,17 +17,9 @@ namespace CDC_demo
             string server = connection.DataSource;
             Console.WriteLine($"db: {db}\ndatasource: {server}");
 
-
-            CDC_Data.GetAllDataFromCTTables(connection);
-            //CDC_Data.GetCapturedColumnsData(connection);
-
-            //CDCData.GetCapturedColumnsData(connection);
-            //CDCData.GetChangeTables(connection);
-
-            //string get_sys_tables = "select name from sys.tables";
-
-            //CDC_producer.KafkaProducer.KafkaProduce();
-
+            //var stream = XmlSerializer.ConvertDataToXml(connection);
+            //KafkaProducer.XmlProduce(stream);
+            XmlSerializer.ConvertDataToXml(connection);
             connection.Close();
             Console.Read();
         }

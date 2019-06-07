@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cdc.dbo_test_table_CT_CT>
+  <row start_lsn="01.06.2019 18:12:36">
+    <end_lsn></end_lsn>
+    <operation>2</operation>
+  </row>
+  <row start_lsn="01.06.2019 18:12:36">
+    <end_lsn></end_lsn>
+    <operation>2</operation>
+  </row>
+  <row start_lsn="01.06.2019 18:12:36">
+    <end_lsn></end_lsn>
+    <operation>2</operation>
+  </row>
+  <row start_lsn="01.06.2019 18:12:36">
+    <end_lsn></end_lsn>
+    <operation>2</operation>
+  </row>
+  <row start_lsn="01.06.2019 18:12:36">
+    <end_lsn></end_lsn>
+    <operation>2</operation>
+  </row>
+  <row start_lsn="01.06.2019 18:12:36">
+    <end_lsn></end_lsn>
+    <operation>2</operation>
+  </row>
+  <row start_lsn="01.06.2019 18:12:36">
+    <end_lsn></end_lsn>
+    <operation>2</operation>
+  </row>
+  <row start_lsn="01.06.2019 18:12:36">
+    <end_lsn></end_lsn>
+    <operation>2</operation>
+  </row>
+  <row start_lsn="01.06.2019 18:12:36">
+    <end_lsn></end_lsn>
+    <operation>2</operation>
+  </row>
+  <row start_lsn="01.06.2019 18:12:36">
+    <end_lsn></end_lsn>
+    <operation>2</operation>
+  </row>
+  <row start_lsn="01.06.2019 18:12:36">
+    <end_lsn></end_lsn>
+    <operation>2</operation>
+  </row>
+  <row start_lsn="01.06.2019 18:12:36">
+    <end_lsn></end_lsn>
+    <operation>2</operation>
+  </row>
+  <row start_lsn="01.06.2019 18:12:36">
+    <end_lsn></end_lsn>
+    <operation>2</operation>
+  </row>
+  <row start_lsn="01.06.2019 18:12:36">
+    <end_lsn></end_lsn>
+    <operation>2</operation>
+  </row>
+  <row start_lsn="01.06.2019 18:12:36">
+    <end_lsn></end_lsn>
+    <operation>2</operation>
+  </row>
+  <row start_lsn="01.06.2019 18:12:36">
+    <end_lsn></end_lsn>
+    <operation>2</operation>
+  </row>
+  <row start_lsn="01.06.2019 18:12:36">
+    <end_lsn></end_lsn>
+    <operation>2</operation>
+  </row>
+  <row start_lsn="01.06.2019 18:12:36">
+    <end_lsn></end_lsn>
+    <operation>2</operation>
+  </row>
+  <row start_lsn="01.06.2019 18:12:36">
+    <end_lsn></end_lsn>
+    <operation>2</operation>
+  </row>
+  <row start_lsn="01.06.2019 18:12:36">
+    <end_lsn></end_lsn>
+    <operation>2</operation>
+  </row>
+  <row start_lsn="01.06.2019 18:12:36">
+    <end_lsn></end_lsn>
+    <operation>2</operation>
+  </row>
+  <row start_lsn="01.06.2019 18:12:36">
+    <end_lsn></end_lsn>
+    <operation>2</operation>
+  </row>
+  <row start_lsn="01.06.2019 18:12:36">
+    <end_lsn></end_lsn>
+    <operation>2</operation>
+  </row>
+</cdc.dbo_test_table_CT_CT>
