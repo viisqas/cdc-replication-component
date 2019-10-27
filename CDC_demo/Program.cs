@@ -13,13 +13,14 @@ namespace CDC_demo
         static void Main(string[] args)
         {
             SqlConnection connection = SqlConnector.GetDBConnection();
+            
             string db = connection.Database;
             string server = connection.DataSource;
             Console.WriteLine($"db: {db}\ndatasource: {server}");
 
-            //var stream = XmlSerializer.ConvertDataToXml(connection);
-            //KafkaProducer.XmlProduce(stream);
-            XmlSerializer.ConvertDataToXml(connection);
+            var stream = XmlSerializer.ConvertDataToXml(connection);
+            KafkaProducer.XmlProduce(stream);
+            
             connection.Close();
             Console.Read();
         }

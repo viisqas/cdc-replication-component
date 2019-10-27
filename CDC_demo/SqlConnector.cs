@@ -5,16 +5,16 @@ namespace CDC_demo
 {
     class SqlConnector
     {
+        private readonly string connString = "Data Source=VIKTORIYAKA5408;Initial Catalog=service_order;Integrated Security=True";
+        
         public static SqlConnection GetDBConnection()
         {
-            string connString = "Data Source=VIKTORIYAKA5408;Initial Catalog=service_order;Integrated Security=True";
-
-            SqlConnection conn = new SqlConnection(connString);
+            SqlConnection connection = new SqlConnection(connString);
             
             try
             {
                 Console.WriteLine("Openning Connection...");
-                conn.Open();
+                connection.Open();
                 Console.WriteLine("Connection successful!");
             }
             catch (Exception e)
@@ -22,7 +22,7 @@ namespace CDC_demo
                 Console.WriteLine("Error: " + e.Message);
             }
 
-            return conn;
+            return connection;
         }
     }
 }
