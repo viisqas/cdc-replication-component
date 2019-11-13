@@ -9,8 +9,9 @@ namespace CDC_demo
     {
         public static List<string> GetLocalTableNames(SqlConnection connection)
         {
-            string CDC_LOCAL_TABLE_NAMES = "SELECT SCHEMA_NAME(5) as schema_name, name as table_name from sys.tables where name like('dbo%')";
-            SqlCommand cmd = new SqlCommand(CDC_LOCAL_TABLE_NAMES, connection);
+            private readonly string CDC_LOCAL_TABLE_NAMES = "SELECT SCHEMA_NAME(5) as schema_name, name as table_name from sys.tables where name like('dbo%')";
+            
+			SqlCommand cmd = new SqlCommand(CDC_LOCAL_TABLE_NAMES, connection);
             List<string> dbo_tables = new List<string>();
             string row = null;
 
@@ -27,8 +28,9 @@ namespace CDC_demo
 
         public static List<string> GetColumnNames(SqlConnection connection, string tablename)
         {
-            string get_column_from_table = $"select * from cdc.{tablename}";
-            List<string> Column_names = new List<string>();
+            private readonly string get_column_from_table = $"select * from cdc.{tablename}";
+            
+			List<string> Column_names = new List<string>();
             SqlCommand cmd = new SqlCommand(get_column_from_table, connection);
             
             using (var dr = cmd.ExecuteReader())

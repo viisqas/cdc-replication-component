@@ -5,11 +5,9 @@ namespace CDC_demo
 {
     class SqlConnector
     {
-        private readonly string connString = "Data Source=VIKTORIYAKA5408;Initial Catalog=service_order;Integrated Security=True";
-        
-        public static SqlConnection GetDBConnection()
+        public static SqlConnection GetDBConnection(connectionString)
         {
-            SqlConnection connection = new SqlConnection(connString);
+            SqlConnection connection = new SqlConnection(connectionString);
             
             try
             {

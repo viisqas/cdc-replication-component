@@ -20,7 +20,7 @@ namespace CDC_demo
             foreach (string tablename in dblist)
             {
                 List<string> columns = SqlServerContext.GetColumnNames(connection, tablename);
-                string query = $"select sys.fn_cdc_map_lsn_to_time(__$start_lsn), sys.fn_cdc_map_lsn_to_time(__$end_lsn), __$operation, {columns[0]}, {columns[1]}, {columns[2]}, {columns[3]}, {columns[4]}, {columns[5]}, {columns[6]} from cdc.{tablename}";
+                private readonly string query = $"select sys.fn_cdc_map_lsn_to_time(__$start_lsn), sys.fn_cdc_map_lsn_to_time(__$end_lsn), __$operation, {columns[0]}, {columns[1]}, {columns[2]}, {columns[3]}, {columns[4]}, {columns[5]}, {columns[6]} from cdc.{tablename}";
                 SqlCommand cmd = new SqlCommand(query, connection);
 
                 using (SqlDataReader dr = cmd.ExecuteReader())
@@ -55,7 +55,8 @@ namespace CDC_demo
         public static string GetOperation(int caseSwitch)
         {
             string op = null;
-            switch (caseSwitch)
+            
+			switch (caseSwitch)
             {
                 case 1:
                     return op = "delete";

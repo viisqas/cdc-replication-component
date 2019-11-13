@@ -10,9 +10,9 @@ namespace CDC_demo
 {
     public static class KafkaProducer
     {
-        public static void XmlProduce(XDocument xdoc)
+        public static void XmlProduce(XDocument xdoc, string bootstrapServers)
         {
-            var conf = new ProducerConfig { BootstrapServers = "localhost:9092" };
+            var conf = new ProducerConfig { BootstrapServers = bootstrapServers };
 
             Action<DeliveryReport<Null, string>> handler = r =>
                 Console.WriteLine(!r.Error.IsError

@@ -12,14 +12,22 @@ namespace CDC_demo
     {
         static void Main(string[] args)
         {
-            SqlConnection connection = SqlConnector.GetDBConnection();
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json");
+ 
+            IConfiguration config = new ConfigurationBuilder()
+                .AddJsonFile("appsettings.json", true, true)
+                .Build();
+            
+			var connection = SqlConnector.GetDBConnection(config["ConnectionString"]);
             
             string db = connection.Database;
             string server = connection.DataSource;
             Console.WriteLine($"db: {db}\ndatasource: {server}");
 
             var stream = XmlSerializer.ConvertDataToXml(connection);
-            KafkaProducer.XmlProduce(stream);
+            KafkaProducer.XmlProduce(stream, config["BootstrapServers"]);
             
             connection.Close();
             Console.Read();
