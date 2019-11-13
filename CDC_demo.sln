@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CDC_producer", "CDC_demo\CDC_producer.csproj", "{534FAAD4-D12A-47D8-8A75-FE6C2D0CE8DB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CDC_consumer", "..\CDC_consumer\CDC_consumer\CDC_consumer.csproj", "{38F83C86-7A28-474B-B803-5AF3AA11A25B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CDC_consumer", "CDC_consumer\CDC_consumer\CDC_consumer.csproj", "{38F83C86-7A28-474B-B803-5AF3AA11A25B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
